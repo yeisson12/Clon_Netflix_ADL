@@ -6,22 +6,22 @@
     background-color: black;
 }
 
-.footer-contenedor{
+.footer-container{
     width: 95%;
     margin-inline: auto;
 }
 
-.iconos{
+.icons{
     display: flex;
     gap: 20px;
 }
 
-.iconos li{
+.icons li{
     width: 30px;
     height: 30px;
 }
 
-.informacion{
+.information{
     display: grid;
     color: rgb(133, 133, 133);
     gap: 20px;
@@ -30,24 +30,24 @@
 }
 
 @media (min-width:400px){
-    .informacion{
+    .information{
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (min-width:768px){
-    .informacion{
+    .information{
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
 @media (min-width:992px){
-    .informacion{
+    .information{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 
-.informacion p:hover{
+.information p:hover{
     color: white;
 }
 
