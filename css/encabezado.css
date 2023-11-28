@@ -29,7 +29,7 @@
     font-size: 15px;
     position: fixed;
     z-index: 1000;
-    background-color: black;
+    background-color: transparent;
     height: 65px;
 }
 
