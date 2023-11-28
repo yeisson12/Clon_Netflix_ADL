@@ -3,44 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/icons/Icono-Netflix.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <title>Netflix</title>
+    <title>Página de inicio — Netflix</title>
 </head>
 <body>
     
-    <header class="background-banner">
+    <header class="background-mainfeatures">
         <video muted autoplay loop poster="assets/img/WhatsApp Image 2023-08-08 at 10.54.54 PM.jpeg">
             <source src="assets/videos/baki.mp4" type="video/mp4">
             <img src="assets/img/WhatsApp Image 2023-08-08 at 10.54.54 PM.jpeg" alt="Imagen background">
         </video>
-        <div class="banner">
-            <div class="menu">
+        <div class="mainfeatures">
+            <div class="main">
                 <nav>
-                    <menu class="navegacion navegacion-izquierda">
-                        <li class="logo"><a href=""><img src="assets/img/netflix.png" alt="Netflix"></a></li>
+                    <menu class="nav nav-left">
+                        <li class="img-logo"><a href=""><img src="assets/img/netflix.png" alt="Netflix"></a></li>
                         <li><a href="">Explorar</a></li>
                         <li><a href="">Inicio</a></li>
                         <li><a href="">Series</a></li>
                         <li><a href="">Peliculas</a></li>
-                        <li><a href="">Novedades Populares</a></li>
+                        <li><a href="">Novedades populares</a></li>
                         <li><a href="">Mi Lista</a></li>
                         <li><a href="">Explorar por idiomas</a></li>
                     </ul>
                 </nav>
                 <nav>
-                    <ul class="navegacion navegacion-derecha">
+                    <ul class="nav nav-right">
                         <li><a href=""><img class="invertir" src="assets/inconos/lupa.png" alt="lupa"></a></li>
                         <li><a href=""><img class="invertir" src="assets/inconos/bell.png" alt="Campana"></a></li>
-                        <li class="usuario"><a href="#"><img src="assets/inconos/perfil.png" alt="Usuario"></a></li>
+                        <li class="user"><a href="#"><img src="assets/inconos/perfil.png" alt="Usuario"></a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="imago">
-                <div class="imagotipo-imagen">
+            <div class="imgmain">
+                <div class="imgtipo-img">
                     <img src="assets/img/baki.png" alt="Imagen logotipo">
                 </div>
-                <div class="imagotipo-info">
+                <div class="imgtipo-data">
                     <button>
                         <span>▶ Reproducir</span>
                     </button>
@@ -51,21 +52,21 @@
             </div>
         </div>
     </header>
-    <main class="category">
-        <section class="category-peliculas">
+    <main class="catalogos">
+        <section class="catalogo-peliculas">
             <h2>Populares en Netflix</h2>
             <div class="peliculas slide-uno" id="populares">
 
             </div>
         </section>
-        <section class="category-top">
+        <section class="catalogo-top">
             <div class="top-titulo-controles">
                 <h2>Las 10 peliculas mas populares en Netflix</h2>
                 <div class="indicadores">
                     
                 </div>
             </div>
-            <div class="category-principal">
+            <div class="catalogo-principal">
                 <button id="flecha-izquierda" class="flecha-izquierda invertir" ><img src="assets/inconos/angle-left-solid.svg" alt=""></i></button>
                 <ul class="peliculas slide-dos" id="top">
                     <li class="peliculas-top">
@@ -114,11 +115,11 @@
             </div>
             </div>
         </section>
-        <section class="category-peliculas">
+        <section class="catalogo-peliculas">
             <h2>Peliculas de Estreno</h2>
             <div class="peliculas" id="estreno"></div>
         </section>
-        <section class="category.-peliculas">
+        <section class="catalogo-peliculas">
             <h2>Tendencias</h2>
             <div class="peliculas" id="vistas">
 
@@ -126,15 +127,15 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="footer-contenedor">
-            <ul class="iconos">
+        <div class="footer-container">
+            <ul class="icons">
                 <li><a href=""><img src="assets/inconos/facebook.svg" alt="Facebook"></a></li>
                 <li><a href=""><img src="assets/inconos/instagram.svg" alt="Instagram"></a></li>
                 <li><a href=""><img src="assets/inconos/github.svg" alt="Github"></a></li>
                 <li><a href=""><img src="assets/inconos/github.svg" alt="Linkedin"></a></li>
             </ul>
         </div>
-        <div class="informacion">
+        <div class="information">
             <p>Audio Descriptivo</p>
             <p>Relaciones con inversionistas</p>
             <p>Avisos legales</p>
