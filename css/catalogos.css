@@ -32,8 +32,8 @@
     position: relative;
 }
 
-.catalogo-top .catalogo-principal .flecha-izquierda,
-.catalogo-top .catalogo-principal .flecha-derecha{
+.catalogo-top .catalogo-principal .topLeft,
+.catalogo-top .catalogo-principal .topRigth{
     position: absolute;
     border: none;
     background: rgb(255, 255, 255, 0.3);
@@ -48,16 +48,16 @@
     transition: .2s ease all;
 }
 
-.catalogo-top .catalogo-principal .flecha-izquierda:hover,
-.catalogo-top .catalogo-principal .flecha-derecha:hover{
+.catalogo-top .catalogo-principal .topLeft:hover,
+.catalogo-top .catalogo-principal .topRigth:hover{
     background: rgb(255, 255, 255, 0.9);
 }
 
-.catalogo-top .catalogo-principal .flecha-izquierda{
+.catalogo-top .catalogo-principal .topLeft{
     left: 0;
 }
 
-.catalogo-top .catalogo-principal .flecha-derecha{
+.catalogo-top .catalogo-principal .topRigth{
     right: 0;
 }
 
