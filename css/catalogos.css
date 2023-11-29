@@ -67,7 +67,6 @@
     height: 200px;
     padding: 20px 0;
     overflow: hidden;
-    scroll-behavior: smooth;
 }
 
 
@@ -99,7 +98,8 @@
 }
 
 .caratula-top{
-    width: max-content;
+    width: 248px;
+    height: 138px;
 }
 .caratula-top img{
     object-fit: contain;
