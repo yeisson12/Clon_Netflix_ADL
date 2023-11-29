@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
         const [catalogoUno, catalogoDos, catalogoTres] = catologos;
 
         // Catalogo uno
-        const populares = document.querySelector('#populares');
+        const populares = document.getElementById('populares');
         catalogoUno.results.forEach(pelicula => {
             const article = document.createElement('article');
             article.classList.add('pelicula');
@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
         });
 
         // Catalogo dos
-        const estrenos = document.querySelector('#estreno');
+        const estrenos = document.getElementById('estreno');
         catalogoDos.results.forEach(pelicula => {
             const article = document.createElement('article');
             article.classList.add('pelicula');
@@ -49,7 +49,7 @@ window.addEventListener('DOMContentLoaded', () => {
         });
 
         // Catalogo tres
-        const vistas = document.querySelector('#vistas');
+        const vistas = document.getElementById('vistas');
         catalogoTres.results.forEach(pelicula => {
             const article = document.createElement('article');
             article.classList.add('pelicula');
@@ -58,51 +58,73 @@ window.addEventListener('DOMContentLoaded', () => {
             article.append(img);
             vistas.append(article);
         });
-
-        // Initialize sliders
-        initializeSlider('populares');
-        initializeSlider('estreno');
-        initializeSlider('vistas');
-        initializeSlider('top');
+        
     });
 });
 
-function initializeSlider(sliderId) {
-    const filaPelicula = document.querySelectorAll(`#${sliderId} .peliculas-top`);
-    const fila = document.querySelector(`#${sliderId} .peliculas`);
-    const peliculas = document.querySelector(`#${sliderId}`);
-    
-    const flechaIzquierda = document.querySelector(`#${sliderId} .topLeft`);
-    const flechaDerecha = document.querySelector(`#${sliderId} .topRigth`);
 
-    // Rest of your slider code...
+const filaPelicula = document.querySelectorAll(".peliculas-top")
+const fila = document.querySelector(".peliculas");
+const peliculas = document.querySelector(".slide-dos");
 
-    /* paginación */
-    const numeroPagina = Math.ceil(filaPelicula.length / 5);
-    for (let i = 0; i < numeroPagina; i++) {
-        const indicador = document.createElement('button');
+const flechaIzquierda = document.querySelector(".topLeft");
+const flechaDerecha = document.querySelector('.topRigth');
 
-        if (i === 0) {
-            indicador.classList.add("activo");
-        }
+/* Evento Flecha derecha */
 
-        document.querySelector(`#${sliderId} .indicadores`).appendChild(indicador);
-        indicador.addEventListener("click", (e) => {
-            peliculas.scrollLeft = i * peliculas.offsetWidth;
+flechaDerecha.addEventListener('click', () => {
 
-            document.querySelector(`#${sliderId} .indicadores .activo`).classList.remove("activo")
-            e.target.classList.add("activo")
-        })
+    peliculas.scrollLeft += peliculas.offsetWidth;
+
+    const indicadorActivo = document.querySelector(".indicadores .activo")
+
+    if (indicadorActivo.nextSibling) {
+        indicadorActivo.nextSibling.classList.add("activo");
+        indicadorActivo.classList.remove("activo");
+    }
+});
+
+/* Evento Flecha derecha */
+
+flechaIzquierda.addEventListener('click', () => {
+
+    peliculas.scrollLeft -= peliculas.offsetWidth;
+
+    const indicadorActivo = document.querySelector(".indicadores .activo")
+
+    if (indicadorActivo.previousSibling) {
+        indicadorActivo.previousSibling.classList.add("activo");
+        indicadorActivo.classList.remove("activo");
+    }
+});
+
+/* paginación */
+
+const numeroPagina = Math.ceil(filaPelicula.length / 5);
+for (let i = 0; i < numeroPagina; i++) {
+    const indicador = document.createElement('button');
+
+    if (i === 0) {
+        indicador.classList.add("activo");
     }
 
-    /* Hover */
-    Array.from(peliculas.children).forEach((pelicula) => {
-        pelicula.addEventListener("mouseenter", (e) => {
-            const elemento = e.currentTarget;
-            setTimeout(() => {
-                Array.from(peliculas.children).forEach((pelicula) => pelicula.classList.remove("hover"));
-                elemento.classList.add("hover");
-            }, 300)
-        })
-    });
+    document.querySelector('.indicadores').appendChild(indicador);
+    indicador.addEventListener("click", (e) => {
+        peliculas.scrollLeft = i * peliculas.offsetWidth;
+
+        document.querySelector(".indicadores .activo").classList.remove("activo")
+        e.target.classList.add("activo")
+    })
 }
+
+/* Hover */
+
+peliculas.forEach((peliculas) => {
+    peliculas.addEventListener("mouseenter", (e) => {
+        const elemento = e.currentTarget;
+        setTimeout(() => {
+            peliculas.forEach(peliculas => peliculas.classList.remove("hover"));
+            elemento.classList.add("hover")
+        }, 300)
+    })
+}) 

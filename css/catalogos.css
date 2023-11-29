@@ -1,3 +1,24 @@
+/* Add this style to your CSS */
+.catalogo-principal {
+    display: flex;
+    overflow: hidden;
+}
+
+.peliculas-container {
+    display: flex;
+    /* Adjust the width based on your design, e.g., 100% for full width */
+    width: 100%;
+    /* Adjust the transition for smooth scrolling */
+    transition: transform 0.5s ease;
+}
+
+.pelicula {
+    /* Adjust the width and margin based on your design */
+    width: 150px;
+    margin-right: 20px;
+}
+
+
 /*Carrusel top dies*/
 .catalogo-top{
     margin: 70px;
@@ -45,6 +66,7 @@
     cursor: pointer;
     z-index: 500;
     transition: .2s ease all;
+    scroll-behavior: smooth;
 }
 
 .catalogo-top .catalogo-principal .topLeft:hover,
