@@ -103,6 +103,7 @@
 }
 .caratula-top img{
     object-fit: contain;
+    border-radius: 2px;
 }
 
 /*Catalogos*/
@@ -111,12 +112,12 @@
     background-color: black;
     color: white;
 }
-.catalogo--peliculas{
+.catalogo-peliculas{
     width: 95%;
     margin-inline: auto;
 }
-.catalogo--peliculas h1,
-.catalogo--peliculas h2{
+.catalogo-peliculas h1,
+.catalogo-peliculas h2{
     padding: 10px;
 }
 
