@@ -19,7 +19,6 @@
     margin-right: 2px;
 }
 
-
 .catalogo-top .top-titulo-controles .indicadores button:hover,
 .catalogo-top .top-titulo-controles .indicadores button.activo{
     background-color: red;
@@ -75,7 +74,6 @@
 .catalogo-principal .peliculas .peliculas-top{
     display: flex;
     flex-wrap: nowrap;
-    
 }
 
 .catalogo-principal .peliculas .peliculas-top  {
@@ -105,7 +103,6 @@
 }
 .caratula-top img{
     object-fit: contain;
-    border-radius: 2px;
 }
 
 /*Catalogos*/
@@ -114,25 +111,20 @@
     background-color: black;
     color: white;
 }
-.catalogo-peliculas{
+.catalogo--peliculas{
     width: 95%;
     margin-inline: auto;
-    
-    
-   
 }
-.catalogo-peliculas h1,
-.catalogo-peliculas h2{
+.catalogo--peliculas h1,
+.catalogo--peliculas h2{
     padding: 10px;
 }
-
 
 .peliculas{
     overflow-x: scroll;
     display: flex;
     gap: 12px;
     height: 120px;
-    
 }
 .peliculas::-webkit-scrollbar{
     width: 0;
@@ -141,8 +133,6 @@
 .pelicula{
     min-width: 200px;
     height: auto;
-   
-
 }
 
 .pelicula:hover{

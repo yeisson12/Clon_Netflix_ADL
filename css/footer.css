@@ -1,31 +1,27 @@
 /* Footer*/
-p{
-    font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #808080;
-}
+
 .footer{
     padding: 10%;
     margin: auto;
     background-color: black;
 }
 
-.footer-container{
+.footer-contenedor{
     width: 95%;
     margin-inline: auto;
 }
 
-.icons{
+.iconos{
     display: flex;
     gap: 20px;
 }
 
-.icons li{
+.iconos li{
     width: 30px;
     height: 30px;
 }
 
-.information{
+.informacion{
     display: grid;
     color: rgb(133, 133, 133);
     gap: 20px;
@@ -34,24 +30,24 @@ p{
 }
 
 @media (min-width:400px){
-    .information{
+    .informacion{
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (min-width:768px){
-    .information{
+    .informacion{
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
 @media (min-width:992px){
-    .information{
+    .informacion{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 
-.information p:hover{
+.informacion p:hover{
     color: white;
 }
 
