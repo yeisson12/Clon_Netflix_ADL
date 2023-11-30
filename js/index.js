@@ -11,8 +11,19 @@ document.addEventListener('DOMContentLoaded', function () {
             content.classList.remove('scroll-color');
         }
     }
-
     addEventListener('scroll', cambioColorScroll);
+
+    // pausar video
+    var video = document.getElementById('miVideo');
+    var poster = document.getElementById('miPoster');
+    video.addEventListener('ended', function () {
+      // Ocultar el video y mostrar el póster
+      video.style.display = 'none';
+      poster.style.display = 'block';
+    });
+  
+    // Reproducir el video
+    video.play();
 
     // Slider de películas
     const slider = document.querySelector('.slider');
@@ -116,7 +127,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const flechaIzquierda = document.querySelector(".topLeft");
     const flechaDerecha = document.querySelector('.topRigth');
 
-    /* Evento Flecha derecha */
     flechaDerecha.addEventListener('click', () => {
         peliculas.scrollLeft += peliculas.offsetWidth;
 
@@ -128,7 +138,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    /* Evento Flecha izquierda */
     flechaIzquierda.addEventListener('click', () => {
         peliculas.scrollLeft -= peliculas.offsetWidth;
 
@@ -169,31 +178,7 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     });
 });
-document.addEventListener("DOMContentLoaded", function () {
-    const peliculasSlide = document.querySelector("#peliculas-slide");
-    let currentVideo;
 
-    function playVideo(element) {
-        const video = element.querySelector("video");
-        if (video) {
-            video.play();
-            currentVideo = video;
-        }
-    }
-
-    function pauseVideo(element) {
-        const video = element.querySelector("video");
-        if (video && video !== currentVideo) {
-            video.pause();
-        }
-    }
-
-    peliculasSlide.addEventListener("mouseout", function () {
-        if (currentVideo) {
-            currentVideo.pause();
-        }
-    });
-});
 
 document.addEventListener("DOMContentLoaded", function () {
     const slider = document.querySelector('.slider');
@@ -221,3 +206,4 @@ document.addEventListener("DOMContentLoaded", function () {
         showSlide(currentSlide + 1);
     }
 });
+

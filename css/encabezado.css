@@ -175,3 +175,12 @@
   width: 400px;
   margin-left: 50px;
 }
+
+#miVideo {
+  overflow: hidden;
+}
+
+#miPoster {
+  width: 100%;
+  display: none;
+}

@@ -12,10 +12,10 @@
 <body>
 
     <header class="header">
-        <video muted autoplay loop poster="assets/img/The Witcher.png">
+        <video id="miVideo" muted autoplay poster="assets/img/The Witcher.png">
             <source src="assets/videos/The Witcher.mp4" type="video/mp4">
-            <img src="assets/img/The Witcher.png" alt="Imagen background">
         </video>
+        <img id="miPoster" src="assets/img/The Witcher.png" alt="Póster">
         <div class="main-conten">
             <div class="main">
                 <nav class="nav">
@@ -77,9 +77,12 @@
             <div class="slider-container">
                 <div class="slider" id="peliculas-slide">
                     <div class="slide peliculas slide-uno">
-                        <div class="pelicula" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)">
-                            <video controls preload="metadata" class="caratula-top"
-                                src="/assets/videos/The Witcher.mp4" alt="Pelicula 1"></video>
+                        <div class="pelicula">
+                            <img class="caratula-top" src="assets/img/The Witcher.png" alt="pelicula 1">
+                            <video controls preload="metadata" class="caratula-top" src="assets/videos/The Witcher.mp4" alt="Pelicula 1"></video>
+                            <div class="videoOverlay">
+                                <div class="playButton" onclick="playVideo(this)">▶</div>
+                            </div>
                         </div>
             
                         <!-- Agrega más películas según sea necesario -->
