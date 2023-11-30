@@ -62,7 +62,7 @@
                             <img class="icon-play" src="assets/inconos/play.svg" alt="">
                             <span>Reproducir</span>
                         </button>
-                        
+
                         <button class="btn-mas">
                             ⓘ Mas informacion
                         </button>
@@ -73,26 +73,104 @@
     </header>
 
     <main class="catalogos">
-
-        <section class="catalogo-peliculas">
-            <h2>Populares en Netflix</h2>
-            <div class="peliculas slide-uno" id="populares">
-
-            </div>
-        </section>
-        
         <section class="catalogo-peliculas">
             <h2>Peliculas de Estreno</h2>
-            <div class="peliculas" id="estreno"></div>
-        </section>
-        <section class="catalogo-peliculas">
-            <h2>Tendencias</h2>
-            <div class="peliculas" id="vistas">
-
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide peliculas slide-uno">
+                        <div class="pelicula">
+                          <img class="caratula-top" src="/assets/img/pop8.jpg" alt="Pelicula 1"></img>
+                        </div>
+                        
+                        <div class="pelicula">
+                            <img class="caratula-top" src="/assets/img/pop8.jpg" alt="Pelicula 1"></img>
+                        </div>
+                      
+                        <div class="pelicula">
+                            <img class="caratula-top" src="/assets/img/pop8.jpg" alt="Pelicula 1"></img>
+                        </div>
+                        <div class="pelicula">
+                            <img class="caratula-top" src="/assets/img/pop8.jpg" alt="Pelicula 1"></img>
+                        </div>
+                          <div class="pelicula">
+                            <img class="caratula-top" src="/assets/img/pop8.jpg" alt="Pelicula 1"></img>
+                        </div>
+                        <div class="pelicula">
+                            <img class="caratula-top" src="/assets/img/pop8.jpg" alt="Pelicula 1"></img>
+                        </div>
+                    </div>
+                      
+                    <div class="slide peliculas slide-dos">
+                        <div class="pelicula">
+                            <img class="caratula-top" src="/assets/img/pop8.jpg" alt="Pelicula 1"></img>
+                          </div>
+                          
+                          <div class="pelicula">
+                              <img class="caratula-top" src="/assets/img/pop8.jpg" alt="Pelicula 1"></img>
+                          </div>
+                        
+                          <div class="pelicula">
+                              <img class="caratula-top" src="/assets/img/pop8.jpg" alt="Pelicula 1"></img>
+                          </div>
+                          <div class="pelicula">
+                              <img class="caratula-top" src="/assets/img/pop8.jpg" alt="Pelicula 1"></img>
+                          </div>
+                            <div class="pelicula">
+                              <img class="caratula-top" src="/assets/img/pop8.jpg" alt="Pelicula 1"></img>
+                          </div>
+                          <div class="pelicula">
+                              <img class="caratula-top" src="/assets/img/pop8.jpg" alt="Pelicula 1"></img>
+                          </div>
+                    </div>
+                    
+                </div>
+                <div class="prev" onclick="prevSlide()">&#10094;</div>
+                <div class="next" onclick="nextSlide()">&#10095;</div>
             </div>
         </section>
 
-       
+        <section class="catalogo-peliculas">
+            <h2>Peliculas de populares</h2>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide peliculas slide-uno" id="populares">
+                    </div>
+                    <div class="overlay">
+                    </div>
+                    <div class="prev" onclick="prevSlide()">&#10094;</div>
+                    <div class="next" onclick="nextSlide()">&#10095;</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalogo-peliculas">
+            <h2>Peliculas de Estreno</h2>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide peliculas slide-uno" id="estreno">
+                    </div>
+                    <div class="overlay">
+                    </div>
+                    <div class="prev" onclick="prevSlide()">&#10094;</div>
+                    <div class="next" onclick="nextSlide()">&#10095;</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalogo-peliculas">
+            <h2>Tendencias</h2>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide peliculas slide-uno" id="vistas">
+                    </div>
+                    <div class="overlay">
+                    </div>
+                    <div class="prev" onclick="prevSlide()">&#10094;</div>
+                    <div class="next" onclick="nextSlide()">&#10095;</div>
+                </div>
+            </div>
+        </section>
+
         <section class="catalogo-top">
             <div class="top-titulo-controles">
                 <h2>Las 10 peliculas mas populares en Netflix</h2>

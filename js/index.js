@@ -19,6 +19,34 @@ const links = [
     'https://api.themoviedb.org/3/discover/movie?with_genres=18&primary_release_year=2014&api_key=5cd1f737abdc18f94efc569d4d80bf6b'
 ];
 
+document.addEventListener("DOMContentLoaded", function () {
+    const slider = document.querySelector('.slider');
+    let currentSlide = 0;
+  
+    function showSlide(index) {
+      const slides = document.querySelectorAll('.slide');
+      if (index >= slides.length) {
+        currentSlide = 0;
+      } else if (index < 0) {
+        currentSlide = slides.length - 1;
+      } else {
+        currentSlide = index;
+      }
+  
+      const translateValue = -currentSlide * 100 + '%';
+      slider.style.transform = `translateX(${translateValue})`;
+    }
+  
+    window.prevSlide = function () {
+      showSlide(currentSlide - 1);
+    }
+  
+    window.nextSlide = function () {
+      showSlide(currentSlide + 1);
+    }
+  });
+  
+
 window.addEventListener('DOMContentLoaded', () => {
     const solicitudes = links.map(peticion => fetch(peticion));
     Promise.all(solicitudes).then(values => {
@@ -128,3 +156,4 @@ peliculas.forEach((peliculas) => {
         }, 300)
     })
 }) 
+
