@@ -50,7 +50,7 @@ a{
     width: 50px;
     color: white;
     cursor: pointer;
-    z-index: 500;
+    z-index: 1;
     transition: .2s ease all;
     scroll-behavior: smooth;
 }
@@ -145,32 +145,40 @@ a{
     background-color: aqua;
 }
 
+
 .slider-container {
     position: relative;
     width: 100%;
     margin: auto;
     overflow: hidden;
-  }
-  
-  .slider {
+}
+
+.slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
-  }
-  
-  .slide {
+}
+
+.slide {
     position: relative;
     min-width: 100%;
     box-sizing: border-box;
     overflow: hidden;
-  }
-  
-  img {
+}
+
+.pelicula {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+img, video {
     width: 100%;
     height: auto;
     display: block;
-  }
-  
-  .overlay {
+}
+
+.overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -181,14 +189,13 @@ a{
     box-sizing: border-box;
     opacity: 0;
     transition: opacity 0.3s;
-  }
-  
-  .slide:hover .overlay {
+}
+
+.pelicula:hover .overlay {
     opacity: 1;
-  }
-  
-  .prev,
-  .next {
+}
+
+.prev, .next {
     position: absolute;
     top: 50%;
     width: auto;
@@ -201,14 +208,13 @@ a{
     border-radius: 0 3px 3px 0;
     cursor: pointer;
     user-select: none;
-  }
-  
-  .next {
+}
+
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  .prev:hover,
-  .next:hover {
+}
+
+.prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
-  }
+}
