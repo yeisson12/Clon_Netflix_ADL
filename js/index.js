@@ -55,7 +55,7 @@ window.addEventListener('DOMContentLoaded', () => {
         const [catalogoUno, catalogoDos, catalogoTres] = catologos;
 
         // Catalogo uno
-        const populares = document.getElementById('populares');
+        const populares = document.querySelector('#populares');
         catalogoUno.results.forEach(pelicula => {
             const article = document.createElement('article');
             article.classList.add('pelicula');
@@ -66,7 +66,7 @@ window.addEventListener('DOMContentLoaded', () => {
         });
 
         // Catalogo dos
-        const estrenos = document.getElementById('estreno');
+        const estrenos = document.querySelector('#estreno');
         catalogoDos.results.forEach(pelicula => {
             const article = document.createElement('article');
             article.classList.add('pelicula');
@@ -77,7 +77,7 @@ window.addEventListener('DOMContentLoaded', () => {
         });
 
         // Catalogo tres
-        const vistas = document.getElementById('vistas');
+        const vistas = document.querySelector('#vistas');
         catalogoTres.results.forEach(pelicula => {
             const article = document.createElement('article');
             article.classList.add('pelicula');
