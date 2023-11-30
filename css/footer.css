@@ -6,7 +6,9 @@ p{
     color: #808080;
 }
 .footer{
-    padding: 10%;
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
     margin: auto;
     background-color: #141414;
 }
@@ -22,8 +24,8 @@ p{
 }
 
 .iconos li{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
 }
 
 .informacion{
@@ -67,3 +69,4 @@ p{
     font-weight: 900;
     text-align: center;
 }
+
