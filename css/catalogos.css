@@ -159,6 +159,11 @@ a {
     overflow: hidden;
 }
 
+.peliculas::-webkit-scrollbar {
+    display: none;
+    }
+    
+
 .slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
