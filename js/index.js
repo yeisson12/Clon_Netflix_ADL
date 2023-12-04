@@ -148,3 +148,15 @@ document.addEventListener('DOMContentLoaded', function () {
         showSlide(currentSlide + 1);
     };
 });
+
+
+function verVideoPeli(title, videoUrl, description) {
+    document.querySelector('#verTitle').innerHTML = title;
+    document.querySelector('#verVideo').src = videoUrl;
+    document.querySelector('#verDescription').innerHTML = description;
+    document.querySelector('#ver').style.display = 'block';
+}
+
+function closever() {
+    document.querySelector('#ver').style.display = 'none';
+}
