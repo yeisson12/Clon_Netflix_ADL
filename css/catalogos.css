@@ -85,12 +85,12 @@ a {
 
 .catalogo-principal .peliculas .peliculas-top {
     min-width: 20%;
-    transition: .3 ease all;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+    transition: 0.5s;
 }
 
 .catalogo-principal .peliculas .peliculas-top.hover {
     transform: scale(1.2);
+    transition: 0.5s;
     vertical-align: center;
 }
 
@@ -100,7 +100,6 @@ a {
 }
 
 .top-numero img {
-    object-fit: cover;
     object-position: center;
     width: 100%;
 }
@@ -109,6 +108,7 @@ a {
 .caratula-top img {
     object-fit: contain;
     height: 100%;
+    width: 100%;
     border-top-left-radius: 0px !important;
     border-bottom-left-radius: 0px !important;
 
@@ -142,7 +142,6 @@ a {
     min-width: 200px;
     height: auto;
     position: relative;
-    /* Ajusta el ancho según tus necesidades */
     overflow: hidden;
     transition: transform 0.3s;
 }
