@@ -70,3 +70,18 @@ p{
     text-align: center;
 }
 
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+
+    .iconos {
+        margin-bottom: 10px;
+    }
+
+    .informacion {
+        display: none;
+    }
+}

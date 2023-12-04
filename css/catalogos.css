@@ -246,3 +246,29 @@ video {
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
+.catalogo-peliculas h2 {
+    font-size: 18px;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .catalogo-peliculas {
+        margin-bottom: 30px;
+    }
+
+    .slider-container {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .slider {
+        width: 300%; /* Ajusta según sea necesario */
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+        width: 33.33%; /* Ajusta según sea necesario */
+        /* Otros estilos... */
+    }
+}
