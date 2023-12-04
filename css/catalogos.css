@@ -85,12 +85,12 @@ a {
 
 .catalogo-principal .peliculas .peliculas-top {
     min-width: 20%;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
-.catalogo-principal .peliculas .peliculas-top.hover {
+.catalogo-principal .peliculas .peliculas-top:hover {
     transform: scale(1.2);
-    transition: 0.5s;
+    transition: 0.3s;
     vertical-align: center;
 }
 
