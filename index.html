@@ -77,14 +77,12 @@
             <div class="slider-container">
                 <div class="slider" id="peliculas-slide">
                     <div class="slide peliculas slide-uno">
-                        <div class="pelicula">
+                        <div class="pelicula" onclick="verVideoPeli('The Witcher', 'assets/videos/The Witcher.mp4', 'Geralt de Rivia, el legendario brujo cazador de monstruos, gravitainexorablemente hacia su destino en un mundo de tormentos y humanastraiciones.')">
                             <img class="caratula-top" src="assets/img/The Witcher.png" alt="pelicula 1">
-                            <video controls preload="metadata" class="caratula-top" src="assets/videos/The Witcher.mp4" alt="Pelicula 1"></video>
                             <div class="videoOverlay">
-                                <div class="playButton" onclick="playVideo(this)">▶</div>
+                                <div class="playButton">▶</div>
                             </div>
                         </div>
-            
                         <!-- Agrega más películas según sea necesario -->
                         <div class="pelicula">
                             <img class="caratula-top" src="/assets/img/p2.jpg" alt="Pelicula 2"></img>
@@ -131,6 +129,17 @@
             </div>
             
         </section>
+        <div class="ver" id="ver">
+            <div class="ver-content">
+                <span class="close" onclick="closever()">&times;</span>
+                <video id="verVideo" controls autoplay preload="metadata">
+                </video>
+                <div class="ver-info">
+                    <h3 id="verTitle">Introducción a la película</h3>
+                    <p id="verDescription">Descripción breve de la película...</p>
+                </div>
+            </div>
+        </div>
 
         <section class="catalogo-peliculas">
             <h2>Peliculas de populares</h2>
@@ -254,7 +263,9 @@
             <p>Contactenos</p>
         </div>
     </footer>
+    
     <script src="js/index.js"></script>
 </body>
+
 
 </html>
