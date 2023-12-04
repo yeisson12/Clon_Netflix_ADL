@@ -6,7 +6,8 @@ a {
 }
 
 .catalogo-top {
-    margin: 70px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 /* Contenedor titulo y controles*/
@@ -101,16 +102,16 @@ a {
 .top-numero img {
     object-fit: cover;
     object-position: center;
-    width: 80px;
+    width: 100%;
 }
 
-.caratula-top {
-    height: 138px;
-}
 
 .caratula-top img {
     object-fit: contain;
-    border-radius: 2px;
+    height: 100%;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+
 }
 
 /*Catalogos*/
