@@ -231,7 +231,7 @@
 }
 
 /* Estilos para dispositivos móviles */
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1250px){
   .logotipo {
     width: 80%;
     margin-top: 300px;
