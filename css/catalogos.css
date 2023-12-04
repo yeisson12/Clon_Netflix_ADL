@@ -287,18 +287,16 @@ video {
 
 .ver-content {
     position: absolute;
-    top: 35%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 20px;
     text-align: center;
     max-width: max-content;
 }
 
-.ver-content video {
+.videoPeli {
     max-width: 100%;
     height: auto;
-    margin-bottom: 10px;
 }
 
 .close {
@@ -325,5 +323,17 @@ video {
 .ver-info{
     background-color: #141414;
     color: white;
-    margin-top: 350px;
+    margin-top: 56%;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 480px){
+    .ver-content {
+        position: absolute;
+        top: 40%;
+        left: 47%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        max-width: max-content;
+    }
 }
