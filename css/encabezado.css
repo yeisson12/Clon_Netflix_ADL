@@ -1,7 +1,7 @@
 /* main-conten */
 
 .header {
-  height: 88vh; 
+  height: 88vh;
   width: 100%;
   overflow: hidden;
 }
@@ -166,7 +166,7 @@
   font-size: 15px;
   display: flex;
   flex-direction: row;
-  align-items: center;  
+  align-items: center;
   text-align: center;
   padding: 0px 30px 0px 15px;
 }
@@ -186,7 +186,7 @@
   display: none;
 }
 
-.nav2{
+.nav2 {
   display: none;
 }
 
@@ -231,7 +231,7 @@
 }
 
 /* Estilos para dispositivos móviles */
-@media screen and (max-width: 1250px){
+@media screen and (max-width: 1250px) {
   .logotipo {
     width: 80%;
     margin-top: 300px;
@@ -240,19 +240,72 @@
 }
 
 @media screen and (max-width: 1067px) {
-  .nav2{
+  .nav2 {
     display: inline;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 72px 0px 40px;
+    align-items: center;
   }
 
-  .nav-left,.i,.s,.p,.n,.l,.e{
+  .logo {
+    width: 115px;
+    height: 40px;
+    list-style: none;
+  }
+
+  .navbar {
+    background-color: #141414;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  }
+
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #141414;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  .dropdown-item {
+    padding: 10px 0;
+    text-decoration: none;
+    display: block;
+    color: #757575;
+    transition: color 0.3s;
+  }
+
+  .dropdown-item:hover {
+    color: #fff;
+  }
+
+  .nav {
     display: none;
   }
+
   .logotipo {
     width: 80%;
     margin-top: 400px;
     margin-left: 50px;
   }
- 
+
 }
-
-
