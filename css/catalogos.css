@@ -124,6 +124,7 @@ a {
 .catalogo-peliculas {
     width: 95%;
     margin-inline: auto;
+    margin-bottom: 40px;
 }
 
 .catalogo-peliculas h1,
