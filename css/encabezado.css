@@ -108,7 +108,7 @@
 }
 
 .title-logotipo {
-  width: 50%;
+  width: 45%;
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -186,42 +186,73 @@
   display: none;
 }
 
+.nav2{
+  display: none;
+}
+
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #141414;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 10px 0;
+  text-decoration: none;
+  display: block;
+  color: #757575;
+  transition: color 0.3s;
+}
+
+.dropdown-item:hover {
+  color: #fff;
+}
+
 /* Estilos para dispositivos móviles */
-@media screen and (max-width: 768px) {
-  .nav {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .nav-left,
-  .nav-right {
-      width: 100%;
-      text-align: center;
-  }
-
-  .nav-right {
-      margin-top: 10px;
-  }
-
-  .nav-right li {
-      margin: 0;
-  }
-
-  /* Agregar estilos para el menú desplegable (hamburguesa) */
-  .menu-icon {
-      display: block;
-      font-size: 24px;
-      cursor: pointer;
-  }
-
-  .nav-left,
-  .nav-right {
-      display: none;
-  }
-
-  .nav.active .nav-left,
-  .nav.active .nav-right {
-      display: flex;
+@media screen and (max-width: 1400px){
+  .logotipo {
+    width: 80%;
+    margin-top: 300px;
+    margin-left: 50px;
   }
 }
+
+@media screen and (max-width: 1067px) {
+  .nav2{
+    display: inline;
+  }
+
+  .nav-left,.i,.s,.p,.n,.l,.e{
+    display: none;
+  }
+  .logotipo {
+    width: 80%;
+    margin-top: 400px;
+    margin-left: 50px;
+  }
+ 
+}
+
 
